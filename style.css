@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+
+.todo-app {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#todo-form input {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#todo-form button {
+    width: 20%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#todo-list {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* background-color: #f9f9f9; */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.task-text span {
+    flex-grow: 1;
+}
+
+.task span { 
+    background-color: #f9f9f9;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.edit-btn {
+    width: 20%;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.delete-btn {
+    width: 20%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #ffc107;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+::placeholder {
+    font-family: 'JetBrains Mono', monospace;
+}
+/*  
+
+
+
+
+#todo-list {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+} */
